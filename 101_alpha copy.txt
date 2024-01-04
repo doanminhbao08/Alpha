@@ -1,0 +1,4 @@
+(-1 * correlation(rank(delta(log(volume), 2)), rank(((close - open) / open)), 6))
+(-1 * correlation(rank(open), rank(volume), 10)) 
+(-1 * Ts_Rank(rank(low), 9))
+(rank((open - (sum(vwap, 10) / 10))) * (-1 * abs(rank((close - vwap)))))
